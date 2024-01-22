@@ -46,8 +46,7 @@ export default function Carousel({
               fill={true}
               src={slide1.src}
               alt="slide 1"
-              layout={'fill'}
-              objectFit={'contain'}
+              style={{ objectFit: 'contain' }}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -55,8 +54,7 @@ export default function Carousel({
               fill={true}
               src={slide2.src}
               alt="slide 2"
-              layout={'fill'}
-              objectFit={'contain'}
+              style={{ objectFit: 'contain' }}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -64,8 +62,7 @@ export default function Carousel({
               fill={true}
               src={slide3.src}
               alt="slide 3"
-              layout={'fill'}
-              objectFit={'contain'}
+              style={{ objectFit: 'contain' }}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -73,8 +70,7 @@ export default function Carousel({
               fill={true}
               src={slide4.src}
               alt="slide 4"
-              layout={'fill'}
-              objectFit={'contain'}
+              style={{ objectFit: 'contain' }}
             />
           </SwiperSlide>
         </>

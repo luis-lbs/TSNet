@@ -10,8 +10,24 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tsnet.vercel.app'),
   title: 'BEM VINDO | TSNet',
   description: 'Internet em Campinas de Pirajá',
+  openGraph: {
+    title: 'BEM VINDO | TSNet',
+    description: 'Internet em Campinas de Pirajá',
+    url: 'https://tsnet.vercel.app/',
+    siteName: 'TSNet',
+    images: [
+      {
+        url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslide-1.4e46ec89.jpg&w=1920&q=75',
+        width: 1200,
+        height: 600,
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
