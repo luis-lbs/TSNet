@@ -124,7 +124,7 @@ export default function Home() {
           ]}
         />
       </main>
-      <div className="flex flex-col relative w-full h-[300px] mt-20">
+      <div className="flex flex-col relative w-full h-[350px] mt-20">
         <div className="w-full h-full z-10 absolute bg-black opacity-60"></div>
         <Image
           src={conexoes.src}
@@ -132,8 +132,8 @@ export default function Home() {
           alt="conexoes image"
           className="blur-sm"
         />
-        <div className="w-full h-[300px] z-20 absolute grid grid-cols-1 md:grid-cols-2 content-center">
-          <h1 className="p-12 text-[1.8rem] md:text-5xl font-bold text-white text-center md:text-left col-span-1 m-auto">
+        <div className="w-full h-[350px] z-20 absolute grid grid-cols-1 md:grid-cols-2 content-center">
+          <h1 className="px-12  py-10 text-[1.8rem] md:text-5xl font-bold text-white text-center md:text-left col-span-1 m-auto">
             Teste a velocidade da <br />{' '}
             <a className="text-accent">sua internet</a>!
           </h1>

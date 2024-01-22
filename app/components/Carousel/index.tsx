@@ -15,7 +15,6 @@ interface CarouselProps extends HTMLAttributes<HTMLElement> {
   items?: ReactElement[]
   slidesPerView?: number
 }
-
 export default function Carousel({
   className,
   items,
