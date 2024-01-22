@@ -37,6 +37,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="BhP-QwF9yfutdbH9OXwBIaCVcI5CtBRA7vFUkT9ig0M"
+        />
+      </head>
       <body className={roboto.className}>
         <>
           <Header />
