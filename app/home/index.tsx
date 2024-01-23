@@ -48,19 +48,19 @@ export default function Home() {
         <div className="grid grid-rows-1 md:grid-cols-4 w-full mt-16 gap-14 px-4 md:px-0">
           <h1 className="text-5xl font-bold text-text text-center ">
             Clicou, Conectou,{' '}
-            <a className="text-accent">
+            <p className="text-accent">
               Sem
               <br /> Mistérios
-            </a>
+            </p>
             .
           </h1>
           <div className="flex flex-col text-center self-end items-center ">
             <Wallet size={60} className="text-primary" />
             <h4 className="text-2xl text-text mt-6 leading-8">
-              <a className="text-3xl font-bold text-primary">
+              <p className="text-3xl font-bold text-primary">
                 SEM
                 <br />
-              </a>
+              </p>
               Comprovação de renda
             </h4>
           </div>
@@ -68,10 +68,10 @@ export default function Home() {
           <div className="flex flex-col text-center self-end items-center ">
             <NotebookPen size={60} className="text-primary" />
             <h4 className="text-2xl text-text mt-6 leading-8">
-              <a className="text-3xl font-bold text-primary">
+              <p className="text-3xl font-bold text-primary">
                 SEM
                 <br />
-              </a>
+              </p>
               Ánalise de crédito
             </h4>
           </div>
@@ -79,10 +79,10 @@ export default function Home() {
           <div className="flex flex-col text-center self-end items-center ">
             <UserRoundSearch size={60} className="text-primary" />
             <h4 className="text-2xl text-text mt-6 leading-8">
-              <a className="text-3xl font-bold text-primary">
+              <p className="text-3xl font-bold text-primary">
                 SEM
                 <br />
-              </a>
+              </p>
               Consulta ao spc/serasa
             </h4>
           </div>
