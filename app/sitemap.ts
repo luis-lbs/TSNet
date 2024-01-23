@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://tsnet.vercel.app/a-empresa',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 1,
+      priority: 0.9,
     },
   ]
 }
