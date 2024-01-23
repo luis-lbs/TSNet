@@ -12,6 +12,7 @@ import loke from '@/app/public/apps-logo/looke.png'
 import conexoes from '@/app/public/conexoes.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 const londrina = Londrina_Outline({
   weight: ['400'],
@@ -20,6 +21,11 @@ const londrina = Londrina_Outline({
 
 export default function Home() {
   const { width } = useWindowDimensions()
+  const [isMobile, setIsMobile] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (width) width <= 950 ? setIsMobile(true) : setIsMobile(false)
+  }, [width])
 
   return (
     <>
@@ -32,7 +38,7 @@ export default function Home() {
           </h1>
           <h1
             className={`flex m-auto self- text-7xl font-bold text-primary mt-[-24px] relative mr-[calc(50%-${
-              width ?? 1280 <= 950 ? '110px' : '220px'
+              isMobile ? '110px' : '220px'
             })] ${londrina.className}`}
           >
             INSTALOU!
@@ -83,25 +89,21 @@ export default function Home() {
         </div>
 
         <Carousel
-          slidesPerView={width ?? 1280 <= 950 ? 1 : 3}
+          slidesPerView={isMobile ? 1 : 3}
           className={`max-h-[620px] max-w-[1200px] w-full mt-32 mx-auto gap-1`}
           items={[
             <PlanCard
               megas="70"
               price="65,99"
               key={'70-familia-65'}
-              className={`mt-5 ${
-                width ?? 1280 <= 950 ? 'ml-[calc(50%-150px)]' : 'ml-0'
-              }`}
+              className={`mt-5 ${isMobile ? 'ml-[calc(50%-150px)]' : 'ml-0'}`}
               slogans={['Assista suas séries e filmes favoritos em familia']}
             />,
             <PlanCard
               megas="200"
               price="111,99"
               key={'200-games-111'}
-              className={`mt-5 ${
-                width ?? 1280 <= 950 ? 'ml-[calc(50%-150px)]' : 'ml-0'
-              }`}
+              className={`mt-5 ${isMobile ? 'ml-[calc(50%-150px)]' : 'ml-0'}`}
               slogans={[
                 'Mais velocidade para jogar online seus games preferidos',
               ]}
@@ -112,9 +114,7 @@ export default function Home() {
               megas="400"
               price="154,99"
               key={'400-casa-154'}
-              className={`mt-5 ${
-                width ?? 1280 <= 950 ? 'ml-[calc(50%-150px)]' : 'ml-0'
-              }`}
+              className={`mt-5 ${isMobile ? 'ml-[calc(50%-150px)]' : 'ml-0'}`}
               slogans={[
                 'Perfeito para ter sua casa conectada e mais inteligente',
                 '+ HBOMAX incluso',

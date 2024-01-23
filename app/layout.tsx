@@ -3,6 +3,7 @@ import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import SlooganImg from './public/tsnet-slogan.png'
 
 const roboto = Roboto({
   weight: '400',
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'TSNet',
     images: [
       {
-        url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslide-1.4e46ec89.jpg&w=1920&q=75',
+        url: SlooganImg.src,
         width: 1200,
         height: 600,
       },

@@ -46,9 +46,9 @@ export default function Header() {
       <ul
         className={`${
           isMenuOpen
-            ? ' transform translate-y-2 '
+            ? '  translate-y-2 '
             : 'opacity-0 lg:flex pointer-events-none'
-        }  z-50 top-20 right-0 md:pointer-events-auto md:opacity-100 flex flex-col absolute md:static md:flex-row gap-1 md:gap-6   text-lg font-bold items-center transition-all duration-200`}
+        }  md:translate-y-0 z-50 top-20 right-0 md:pointer-events-auto md:opacity-100 flex flex-col absolute md:static md:flex-row gap-1 md:gap-6   text-lg font-bold items-center transition-all duration-200`}
       >
         <li className="md:bg-transparent bg-primary md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
           <Link
