@@ -8,5 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
+    {
+      url: 'https://tsnet.vercel.app/a-empresa',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
   ]
 }
