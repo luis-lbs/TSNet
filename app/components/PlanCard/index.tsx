@@ -35,7 +35,7 @@ export default function PlanCard({
         ))}
       </div>
       <h4 className="self-center mt-10 text-zinc-800 text-[1.785rem] font-medium">
-        Por <a className="text-primary">R${price}</a>/mês
+        Por <p className="text-primary">R${price}</p>/mês
       </h4>
       <button className="w-60 bg-primary text-white text-lg font-bold self-center mt-4 rounded-sm p-2  ">
         EU QUERO

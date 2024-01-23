@@ -136,7 +136,7 @@ export default function Home() {
         <div className="w-full h-[350px] z-20 absolute grid grid-cols-1 md:grid-cols-2 content-center">
           <h1 className="px-12  py-10 text-[1.8rem] md:text-5xl font-bold text-white text-center md:text-left col-span-1 m-auto">
             Teste a velocidade da <br />{' '}
-            <a className="text-accent">sua internet</a>!
+            <p className="text-accent">sua internet!</p>
           </h1>
           <Link
             className="duration-200 transition-all hover:scale-110 font-bold text-2xl md:text-4xl text-white bg-accent md:w-[350px] w-[250px] h-[50px] md:h-[100px] rounded-xl flex text-center items-center justify-center m-auto"
