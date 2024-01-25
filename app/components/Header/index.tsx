@@ -48,9 +48,9 @@ export default function Header() {
           isMenuOpen
             ? '  translate-y-2 '
             : 'opacity-0 lg:flex pointer-events-none'
-        }  md:translate-y-0 z-50 top-20 right-0 md:pointer-events-auto md:opacity-100 flex flex-col absolute md:static md:flex-row gap-1 md:gap-6   text-lg font-bold items-center transition-all duration-200`}
+        }   backdrop-blur-md w-[100vw] md:w-fit md:translate-y-0 z-50 top-20 right-0 md:pointer-events-auto md:opacity-100 flex flex-col absolute md:static md:flex-row gap-0 md:gap-6 text-lg font-bold items-center transition-all duration-200`}
       >
-        <li className="md:bg-transparent bg-primary md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
+        <li className="bg-transparent md:p-0 p-2 w-full md:w-fit h-full md:pr-0 pr-6 text-right md:text-center md:text-text text-primary-muted">
           <Link
             onClick={toggleMenu}
             href="/"
@@ -59,7 +59,7 @@ export default function Header() {
             HOME
           </Link>
         </li>
-        <li className="md:bg-transparent bg-primary md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
+        <li className="bg-transparent md:p-0 p-2 w-full md:w-fit h-full md:pr-0 pr-6 text-right md:text-center md:text-text text-primary-muted">
           <Link
             onClick={toggleMenu}
             href="/a-empresa"
@@ -68,7 +68,7 @@ export default function Header() {
             A EMPRESA
           </Link>
         </li>
-        <li className="md:bg-transparent bg-primary md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
+        <li className="bg-transparent md:p-0 p-2 w-full md:w-fit h-full md:pr-0 pr-6 text-right md:text-center md:text-text text-primary-muted">
           <Link
             onClick={toggleMenu}
             href="/planos"
@@ -77,7 +77,7 @@ export default function Header() {
             PLANOS
           </Link>
         </li>
-        <li className="md:bg-transparent bg-primary md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
+        <li className="bg-transparent md:p-0 p-2 w-full md:w-fit h-full md:pr-0 pr-6 text-right md:text-center md:text-text text-primary-muted">
           <Link
             onClick={toggleMenu}
             href="/contato"
@@ -86,22 +86,22 @@ export default function Header() {
             CONTATO
           </Link>
         </li>
-        <li className="md:bg-transparent  md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
+        <li className="justify-end pr-6 flex md:bg-transparent  md:pr-0 md:p-0 p-2 w-full md:w-fit h-full text-center md:text-center md:text-text text-white">
           <Link
             onClick={toggleMenu}
             target="_blank"
             href="https://www.tsnettelecom.com.br/contrato-scm.pdf"
-            className="flex flex-row gap-2 bg-accent p-2 text-white rounded-2xl transition-opacity duration-200 hover:opacity-85"
+            className="w-52 justify-center flex flex-row gap-2 bg-accent p-2 text-white rounded-2xl transition-opacity duration-200 hover:opacity-85"
           >
             <FilePenLine /> CONTRATO SCM
           </Link>
         </li>
-        <li className="md:bg-transparent  md:p-0 p-2 w-full md:w-fit h-full text-center md:text-text text-white">
+        <li className="justify-end flex md:bg-transparent  md:p-0 p-2 w-full md:w-fit h-full md:pr-0 pr-6 text-center md:text-center md:text-text text-white">
           <Link
             onClick={toggleMenu}
             target="_blank"
             href="https://tsnettelecom.sgp.net.br/accounts/central/login"
-            className="flex flex-row gap-2 bg-accent p-2 text-white rounded-2xl transition-opacity duration-200 hover:opacity-85"
+            className="w-52 justify-center flex flex-row gap-2 bg-accent p-2 text-white rounded-2xl transition-opacity duration-200 hover:opacity-85"
           >
             <User /> ÁREA DO CLIENTE
           </Link>

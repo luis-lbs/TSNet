@@ -12,6 +12,7 @@ const config: Config = {
         'text': '#666666',
         'background': '#f6f4f4',
         'primary': '#7e009e',
+        'primary-muted': '#902FDA',
         'secondary': '#007cad',
         'accent': '#00adef',
       },
