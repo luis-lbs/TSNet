@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### TSNET
+## Um projeto Front-end totalmente responsivo focado em SEO
 
-## Getting Started
+Implementando o framework NextJS par o maior SEO possível a aplicação teve uma nota de 100 em SEO e desempenho tanto no Desktop quanto no Mobile
 
-First, run the development server:
+![image](https://github.com/luis-lbs/TSNet/assets/53980283/7b0f1d9d-d1ca-482c-a106-7a5574c70bdf)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+clique [AQUI](https://pagespeed.web.dev/analysis/https-tsnet-vercel-app/aw84fcfx5c?utm_source=search_console&form_factor=mobile&hl=pt_BR) para ver a página de avaliação oficial do google.
+##
+### Estratégias
+#### SSR (Server-Side Rendering)
+Benefícios para Performance: Melhora a renderização inicial, reduzindo o tempo de carregamento.
+Benefícios para SEO: Facilita o rastreamento e a indexação do conteúdo pelos motores de busca.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### SSG (Static Site Generation)
+Benefícios para Performance: Páginas estáticas carregam mais rápido, pois não exigem processamento no servidor durante a solicitação do cliente.
+Benefícios para SEO: Pré-renderização permite uma indexação eficiente, melhorando a classificação nos resultados de pesquisa.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Sitemap
+Benefícios: Facilita a indexação pelo motores de busca, garantindo que todas as páginas sejam rastreadas e indexadas.
+#### OpenGraph
+Benefícios: Controla a forma como as páginas são exibidas em redes sociais, aumentando o engajamento e tráfego.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Apliquei todas essas estratégias combinadas para atingir performance visibilidade máxima do meu site nos resultados de pesquisa.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/luis-lbs/TSNet/assets/53980283/7c1b0cde-c049-4e1b-91ec-5b316cfc83d7)
